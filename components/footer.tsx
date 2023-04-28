@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className="mt-12 flex flex-col items-center justify-between gap-4 bg-stone-950 p-4 sm:mt-20 md:px-32 lg:flex-row">
+    <div className="mt-6 flex flex-col items-center justify-between gap-4 bg-stone-950 p-4 sm:mt-8 md:px-32 lg:flex-row">
       <div className="flex w-full max-w-md justify-between sm:max-w-none">
         <div className="flex items-center gap-4">
           <h1 className="font-playfairDisplay">jm.dev</h1>

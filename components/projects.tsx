@@ -1,10 +1,14 @@
+import { ArrowRightIcon, LinkIcon } from "@heroicons/react/24/outline";
 import {
   SiAxios,
   SiExpress,
   SiFirebase,
+  SiFramer,
+  SiGithub,
   SiHeadlessui,
   SiMongodb,
   SiMui,
+  SiNextdotjs,
   SiNodedotjs,
   SiReact,
   SiTailwindcss,
@@ -13,10 +17,8 @@ import {
 } from "@icons-pack/react-simple-icons";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowRightIcon, LinkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useState } from "react";
-import { SiGithub } from "@icons-pack/react-simple-icons";
 
 export const Projects = () => {
   const projectsList = [
@@ -46,25 +48,31 @@ export const Projects = () => {
       projectLink: "https://sharenotes-dev.web.app",
       githubLink: "https://github.com/MrXInfinity/SharedNotes",
     },
-    // {
-    //   title: "Muntinlupa University",
-    //   usedTools: ["", ""],
-    //   description: "",
-    //   image: "",
-    //   projectLink: "https://muntinlupa-university.onrender.com/",
-    //   githubLink: "https://github.com/MrXInfinity/MuntinlupaUniversity",
-    // },
-    // {
-    //   title: "this.portfolio",
-    //   usedTools: ["", ""],
-    //   description: "",
-    //   image: "",
-    //   projectLink: "",
-    //   githubLink: "",
-    // },
+    {
+      title: "Muntinlupa University",
+      usedToolIcons: [SiReact, SiVite, SiMui, SiTypescript],
+      description:
+        "Muntinlupa University is a simple project that I've done for my significant other. It is very simple in its logic and design as I've finished it shortly. I did improve and made it complex in another project called Muntinlupa University V2.",
+      image: "/muntinlupaUniversity_img.png",
+      projectLink: "https://muntinlupa-university.onrender.com/",
+      githubLink: "https://github.com/MrXInfinity/MuntinlupaUniversity",
+    },
+    {
+      title: "this.portfolio",
+      usedToolIcons: [
+        SiNextdotjs,
+        SiReact,
+        SiTypescript,
+        SiTailwindcss,
+        SiFramer,
+      ],
+      description:
+        "The website you're seeing right now showcases my love for web development, more specifically the web designing aspect. I have a preference on simplicity but necessarily plain. ",
+      image: "/portfolio_img.png",
+      projectLink: "https://jm-dev-portfolio.vercel.app",
+      githubLink: "https://github.com/MrXInfinity/MrXInfinity.github.io",
+    },
   ];
-
-  const [showLink, setShowLink] = useState(false);
 
   return (
     <div className="flex justify-center">
@@ -110,28 +118,30 @@ export const Projects = () => {
                   transition: { duration: 0.3 },
                 }}
                 viewport={{ once: true, amount: "all" }}
-                className="group flex flex-col justify-between gap-4 sm:flex-row sm:gap-10 sm:even:flex-row-reverse"
+                className="group flex flex-col justify-between gap-4 sm:gap-6 md:flex-row md:gap-10 md:even:flex-row-reverse"
                 key={index}
               >
-                <div className="flex justify-between sm:max-w-sm sm:flex-col sm:justify-start sm:group-even:items-end md:max-w-none">
-                  <h1 className="font-robotoSlab text-lg sm:mb-3 md:text-2xl">
+                <div className="flex w-full max-w-sm items-center justify-between sm:max-w-none md:max-w-sm md:flex-col md:items-start md:justify-start md:group-even:items-end">
+                  <h1 className="font-robotoSlab text-lg md:mb-3 md:text-xl lg:text-2xl">
                     {title}
                   </h1>
-                  <div className="flex gap-2 sm:mb-5">
-                    {usedToolIcons.map((EachToolIcon, index) => (
+                  <div className="flex items-center gap-2 md:mb-5">
+                    {usedToolIcons?.map((EachToolIcon, index) => (
                       <EachToolIcon
                         key={index}
-                        className="h-4 w-4 sm:h-6 sm:w-6"
+                        className="h-4 w-4 lg:h-6 lg:w-6"
                       />
                     ))}
                   </div>
-                  <p className="hidden text-justify sm:block">{description}</p>
+                  <p className="hidden text-justify text-sm md:block lg:text-base">
+                    {description}
+                  </p>
                 </div>
                 <EachProjectImage
                   {...{ title, image, githubLink, projectLink }}
                 />
 
-                <p className="text-sm opacity-80 sm:hidden">{description}</p>
+                <p className="text-sm opacity-80 md:hidden">{description}</p>
               </motion.div>
             )
           )}
@@ -150,15 +160,15 @@ const EachProjectImage: React.FC<{
   const [showLink, setShowLink] = useState(false);
   return (
     <motion.div
-      className="relative grow"
+      className="relative h-fit grow shadow-md shadow-blue-500"
       onMouseEnter={() => setShowLink(true)}
       onMouseLeave={() => setShowLink(false)}
     >
-      {showLink && (
-        <AnimatePresence
-          initial={false}
-          mode="wait"
-        >
+      <AnimatePresence
+        initial={false}
+        mode="wait"
+      >
+        {showLink && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
@@ -189,8 +199,8 @@ const EachProjectImage: React.FC<{
               </Link>
             </motion.div>
           </motion.div>
-        </AnimatePresence>
-      )}
+        )}
+      </AnimatePresence>
       <Image
         className="w-full "
         src={image}
