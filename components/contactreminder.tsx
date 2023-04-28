@@ -5,9 +5,14 @@ import { useState } from "react";
 export const ContactReminder = () => {
   const [restrictLeave, setRestrictLeave] = useState(false);
   return (
-    <div className="flex justify-center">
+    <motion.div
+      className="flex justify-center"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
+      viewport={{ once: true, amount: "all" }}
+    >
       <div className="flex w-full max-w-md items-center justify-between gap-4 rounded-md bg-blue-500 p-4 sm:max-w-none sm:px-8 md:px-12">
-        <h1 className="font-playfairDisplay text-lg sm:text-2xl">
+        <h1 className="w-fit shrink font-playfairDisplay text-lg sm:text-2xl">
           Have I Piqued your Interest?
         </h1>
         <div
@@ -44,12 +49,12 @@ export const ContactReminder = () => {
               </motion.div>
             ) : (
               <motion.div
-                className="flex shrink-0"
+                className="flex"
                 whileTap={{ scale: 0.9 }}
               >
                 <Link
                   href="/contact"
-                  className="button_transition border-2 border-white bg-white px-4 py-2 text-sm text-blue-500 hover:border-blue-400"
+                  className="button_transition border-2 border-white bg-white px-4 py-2 text-center text-sm text-blue-500 hover:border-blue-400"
                 >
                   Contact Me
                 </Link>
@@ -58,6 +63,6 @@ export const ContactReminder = () => {
           </AnimatePresence>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

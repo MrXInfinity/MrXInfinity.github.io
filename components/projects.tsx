@@ -76,7 +76,7 @@ export const Projects = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="flex snap-center flex-col items-center gap-6 sm:gap-10 xl:max-w-[80rem]">
+      <div className="flex w-full snap-center flex-col items-stretch gap-6 sm:gap-10 xl:max-w-[80rem]">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
@@ -97,7 +97,7 @@ export const Projects = () => {
             </Link>
           </motion.div>
         </motion.div>
-        <div className="flex max-w-md flex-col gap-10 sm:max-w-none sm:gap-12">
+        <div className="flex max-w-md flex-col gap-10 sm:max-w-none sm:gap-12 lg:gap-16">
           {projectsList.map(
             (
               {
@@ -118,7 +118,7 @@ export const Projects = () => {
                   transition: { duration: 0.3 },
                 }}
                 viewport={{ once: true, amount: "all" }}
-                className="group flex flex-col justify-between gap-4 sm:gap-6 md:flex-row md:gap-10 md:even:flex-row-reverse"
+                className="group flex flex-col justify-between gap-4 sm:gap-6 md:flex-row md:gap-10 md:even:flex-row-reverse lg:gap-16"
                 key={index}
               >
                 <div className="flex w-full max-w-sm items-center justify-between sm:max-w-none md:max-w-sm md:flex-col md:items-start md:justify-start md:group-even:items-end">
