@@ -83,7 +83,9 @@ export const Projects = () => {
           viewport={{ once: true, amount: "all" }}
           className="flex w-full max-w-md items-center justify-between font-playfairDisplay sm:max-w-none"
         >
-          <h1 className="sm:text-xl">My Personal Project</h1>
+          <h1 className=" font-bold sm:text-lg lg:text-xl">
+            My Personal Project
+          </h1>
           <motion.div
             className="flex"
             whileTap={{ scale: 0.9 }}
