@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.14",
+    "@emailjs/browser": "^3.11.0",
     "@heroicons/react": "^2.0.17",
     "@icons-pack/react-simple-icons": "^7.2.0",
     "@types/node": "18.15.11",
