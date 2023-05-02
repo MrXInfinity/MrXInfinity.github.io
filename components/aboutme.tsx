@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const AboutMe = () => {
   return (
-    <div className="flex max-w-md flex-col gap-6 sm:max-w-none sm:gap-8 xl:max-w-[80rem]">
+    <div className="flex max-w-md flex-col gap-6 sm:max-w-none sm:gap-8 xl:max-w-7xl">
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}

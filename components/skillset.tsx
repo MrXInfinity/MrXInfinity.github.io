@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 
 export const Skillset = () => {
   return (
-    <div className="flex w-full flex-col gap-12 sm:gap-20 xl:max-w-[80rem]">
+    <div className="flex w-full flex-col gap-12 sm:gap-20 xl:max-w-7xl">
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}

@@ -17,7 +17,7 @@ export const ContactReminder = () => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
       viewport={{ once: true, amount: "all" }}
-      className="flex w-full max-w-md items-center justify-between gap-4 rounded-md bg-blue-500 p-4 sm:max-w-none sm:px-8 md:px-12 xl:max-w-[80rem]"
+      className="flex w-full max-w-md items-center justify-between gap-4 rounded-md bg-blue-500 p-4 sm:max-w-none sm:px-8 md:px-12 xl:max-w-7xl"
     >
       <h1 className="w-fit shrink font-playfairDisplay text-lg sm:text-2xl">
         Have I Piqued your Interest?

@@ -75,7 +75,7 @@ export const Projects = () => {
   ];
 
   return (
-    <div className="flex w-full snap-center flex-col items-stretch gap-6 sm:gap-10 xl:max-w-[80rem]">
+    <div className="flex w-full snap-center flex-col items-stretch gap-6 sm:gap-10 xl:max-w-7xl">
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}

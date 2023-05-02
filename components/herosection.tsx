@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Herosection = () => {
   return (
-    <div className="flex w-full max-w-md flex-col items-center justify-between gap-4 overflow-hidden sm:h-[90vh] sm:max-w-none sm:flex-row md:h-auto xl:max-w-[80rem] ">
+    <div className="flex w-full max-w-md flex-col items-center justify-between gap-4 overflow-hidden sm:h-[90vh] sm:max-w-none sm:flex-row md:h-auto xl:max-w-7xl">
       <div className="flex flex-[1_1_300px] flex-col gap-6 sm:min-w-[300px] sm:gap-8 md:max-w-xl  md:gap-10 ">
         <div className="flex flex-col ">
           <h1 className="mb-2 font-playfairDisplay opacity-90 md:text-lg 	">
