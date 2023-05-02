@@ -75,81 +75,77 @@ export const Projects = () => {
   ];
 
   return (
-    <div className="flex justify-center">
-      <div className="flex w-full snap-center flex-col items-stretch gap-6 sm:gap-10 xl:max-w-[80rem]">
+    <div className="flex w-full snap-center flex-col items-stretch gap-6 sm:gap-10 xl:max-w-[80rem]">
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+        viewport={{ once: true, amount: "all" }}
+        className="flex w-full max-w-md items-center justify-between font-playfairDisplay sm:max-w-none"
+      >
+        <h1 className=" font-bold sm:text-lg lg:text-xl">
+          My Personal Project
+        </h1>
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
-          viewport={{ once: true, amount: "all" }}
-          className="flex w-full max-w-md items-center justify-between font-playfairDisplay sm:max-w-none"
+          className="flex"
+          whileTap={{ scale: 0.9 }}
         >
-          <h1 className=" font-bold sm:text-lg lg:text-xl">
-            My Personal Project
-          </h1>
-          <motion.div
-            className="flex"
-            whileTap={{ scale: 0.9 }}
+          <Link
+            href="/projects"
+            className="button_transition flex cursor-pointer items-center gap-2 text-xs text-blue-500/80 hover:bg-slate-400/20"
           >
-            <Link
-              href="/projects"
-              className="button_transition flex cursor-pointer items-center gap-2 text-xs text-blue-500/80 hover:bg-slate-400/20"
-            >
-              <motion.button whileTap={{ scale: 0.9 }}>
-                See more...
-              </motion.button>
-              <ArrowRightIcon className="h-4 w-4" />
-            </Link>
-          </motion.div>
+            <motion.button whileTap={{ scale: 0.9 }}>See more...</motion.button>
+            <ArrowRightIcon className="h-4 w-4" />
+          </Link>
         </motion.div>
-        <div className="flex max-w-md flex-col gap-10 sm:max-w-none sm:gap-12 lg:gap-16">
-          {projectsList.map(
-            (
-              {
-                title,
-                description,
-                githubLink,
-                image,
-                projectLink,
-                usedToolIcons,
-              },
-              index
-            ) => (
-              <motion.div
-                initial={{ opacity: 0, x: index % 2 ? 20 : -20 }}
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: { duration: 0.3 },
-                }}
-                viewport={{ once: true, amount: "all" }}
-                className="group flex flex-col justify-between gap-4 sm:gap-6 md:flex-row md:gap-10 md:even:flex-row-reverse lg:gap-16"
-                key={index}
-              >
-                <div className="flex w-full max-w-sm items-center justify-between sm:max-w-none md:max-w-sm md:flex-col md:items-start md:justify-start md:group-even:items-end">
-                  <h1 className="font-robotoSlab text-lg md:mb-3 md:text-xl lg:text-2xl">
-                    {title}
-                  </h1>
-                  <div className="flex items-center gap-2 md:mb-5">
-                    {usedToolIcons?.map((EachToolIcon, index) => (
-                      <EachToolIcon
-                        key={index}
-                        className="h-4 w-4 lg:h-6 lg:w-6"
-                      />
-                    ))}
-                  </div>
-                  <p className="hidden text-justify text-sm md:block lg:text-base">
-                    {description}
-                  </p>
+      </motion.div>
+      <div className="flex max-w-md flex-col gap-10 sm:max-w-none sm:gap-12 lg:gap-16">
+        {projectsList.map(
+          (
+            {
+              title,
+              description,
+              githubLink,
+              image,
+              projectLink,
+              usedToolIcons,
+            },
+            index
+          ) => (
+            <motion.div
+              initial={{ opacity: 0, x: index % 2 ? 20 : -20 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { duration: 0.3 },
+              }}
+              viewport={{ once: true, amount: "all" }}
+              className="group flex flex-col justify-between gap-4 sm:gap-6 md:flex-row md:gap-10 md:even:flex-row-reverse lg:gap-16"
+              key={index}
+            >
+              <div className="flex w-full max-w-sm items-center justify-between sm:max-w-none md:max-w-sm md:flex-col md:items-start md:justify-start md:group-even:items-end">
+                <h1 className="font-robotoSlab text-lg md:mb-3 md:text-xl lg:text-2xl">
+                  {title}
+                </h1>
+                <div className="flex items-center gap-2 md:mb-5">
+                  {usedToolIcons?.map((EachToolIcon, index) => (
+                    <EachToolIcon
+                      key={index}
+                      className="h-4 w-4 lg:h-6 lg:w-6"
+                    />
+                  ))}
                 </div>
-                <EachProjectImage
-                  {...{ title, image, githubLink, projectLink }}
-                />
+                <p className="hidden text-justify text-sm md:block lg:text-base">
+                  {description}
+                </p>
+              </div>
+              <EachProjectImage
+                {...{ title, image, githubLink, projectLink }}
+              />
 
-                <p className="text-sm opacity-80 md:hidden">{description}</p>
-              </motion.div>
-            )
-          )}
-        </div>
+              <p className="text-sm opacity-80 md:hidden">{description}</p>
+            </motion.div>
+          )
+        )}
       </div>
     </div>
   );
