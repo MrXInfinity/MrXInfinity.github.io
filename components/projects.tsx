@@ -94,7 +94,9 @@ export const Projects = () => {
               href="/projects"
               className="button_transition flex cursor-pointer items-center gap-2 text-xs text-blue-500/80 hover:bg-slate-400/20"
             >
-              <h1>See more...</h1>
+              <motion.button whileTap={{ scale: 0.9 }}>
+                See more...
+              </motion.button>
               <ArrowRightIcon className="h-4 w-4" />
             </Link>
           </motion.div>

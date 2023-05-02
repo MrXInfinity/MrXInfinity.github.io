@@ -30,7 +30,7 @@ export const Navbar = () => {
 
   return (
     <div className="sticky top-0 z-10 flex justify-center bg-[#151515] px-8 py-4 font-playfairDisplay sm:relative lg:px-28 xl:px-32">
-      <div className="flex w-full max-w-md justify-between sm:max-w-none xl:max-w-[80rem]">
+      <div className="flex w-full max-w-md items-center justify-between sm:max-w-none xl:max-w-[80rem]">
         <Link href="/">JM.dev</Link>
         <div className="hidden items-center gap-6 md:flex ">
           <Link
