@@ -21,7 +21,7 @@ export default function Project({ data }: { data: dataResponse[] }) {
       <div className="flex justify-center gap-10 px-8 pt-8 md:gap-20 md:pt-14 lg:px-24 xl:px-32">
         <div className="flex w-full max-w-md flex-col items-stretch justify-between gap-4 rounded-md sm:max-w-none sm:px-8 md:px-12 xl:max-w-5xl">
           <h1 className="font-playfairDisplay font-bold sm:text-left sm:text-lg lg:text-xl">
-            Projects
+            List of Projects
           </h1>
           <div className="flex flex-col gap-2">
             {data.map(({ html_url, name, description, homepage }, index) => (
