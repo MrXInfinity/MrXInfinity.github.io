@@ -93,7 +93,7 @@ export default function ContactMe() {
             </motion.div>
           )}
         </AnimatePresence>
-        <div className="mx-auto flex max-w-4xl flex-col gap-6 px-8 pt-8 sm:gap-6 sm:pt-12 md:sm:pt-16">
+        <div className="mx-auto flex max-w-4xl flex-col gap-6 px-8 pt-8 sm:gap-6 sm:pt-12 md:pb-6 md:pt-20">
           <div className="flex flex-col gap-3">
             <h1 className="font-playfairDisplay text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
               Send Me a Message!
