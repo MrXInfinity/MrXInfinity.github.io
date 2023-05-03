@@ -70,7 +70,7 @@ export const Projects = () => {
         "The website you're seeing right now showcases my love for web development, more specifically the web designing aspect. I have a preference on simplicity but necessarily plain. ",
       image: "/portfolio_img.png",
       projectLink: "https://jm-dev-portfolio.vercel.app",
-      githubLink: "https://github.com/MrXInfinity/MrXInfinity.github.io",
+      githubLink: "https://github.com/MrXInfinity/jm-dev-portfolio",
     },
   ];
 
