@@ -36,7 +36,7 @@ export const Projects = () => {
       description:
         "Traveloga is a website that allows you to book some famous tourists spots within the Philippines. It’s a full stack application built with Create-React-App and has its own REST API, Authentication and Database storage for users and their bookings.",
       image: "/traveloga_img.png",
-      projectLink: "traveloga.onrender.com",
+      projectLink: "https://traveloga.onrender.com",
       githubLink: "https://github.com/MrXInfinity/traveloga",
     },
     {
