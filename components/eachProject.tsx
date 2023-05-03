@@ -22,6 +22,7 @@ const EachProject = ({
         x: 0,
         transition: { duration: 0.5 },
       }}
+      viewport={{ once: true, amount: "all" }}
       className="button_transition flex cursor-pointer flex-col gap-2 rounded-none bg-[#202020] px-6 py-4 hover:bg-[#252525]"
       onClick={(e) => {
         setIsDescVisible((prev) => !prev);
