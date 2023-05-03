@@ -7,8 +7,12 @@ export const Footer = () => {
       <div className="flex w-full max-w-md flex-auto items-center justify-between sm:max-w-none">
         <div className="flex items-center gap-4">
           <h1>jm.dev</h1>
-          <SiGithub className="h-4 w-4 text-blue-500" />
-          <SiLinkedin className="h-4 w-4 text-blue-500" />
+          <Link href="https://www.github.com/MrXInfinity">
+            <SiGithub className="h-4 w-4 text-blue-500" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/johann-mendoza-09465822a">
+            <SiLinkedin className="h-4 w-4 text-blue-500" />
+          </Link>
         </div>
         <div className="flex items-center divide-x divide-solid text-xs">
           <Link
