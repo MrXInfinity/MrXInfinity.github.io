@@ -37,7 +37,7 @@ export const Herosection = () => {
             whileTap={{ scale: 0.9 }}
           >
             <Link
-              href="/test.pdf"
+              href="/johann_mendoza_resume.pdf"
               download
               target="_blank"
               className="button_transition border-2 border-solid border-blue-500 px-4 py-2 hover:bg-blue-500 hover:text-white"
@@ -53,7 +53,7 @@ export const Herosection = () => {
           alt="Hero Image of Johann Mendoza"
           height={550}
           width={550}
-          src="/heroIcon2.svg"
+          src="/heroIcon.svg"
         />
       </div>
     </div>

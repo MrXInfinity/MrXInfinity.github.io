@@ -66,7 +66,7 @@ export const Navbar = () => {
             whileTap={{ scale: 0.9 }}
           >
             <Link
-              href="/test.pdf"
+              href="/johann_mendoza_resume.pdf"
               target="_blank"
               download
               className="button_transition border-2 border-solid border-blue-500 px-4 py-2 text-blue-500 hover:bg-blue-500 hover:text-white"
@@ -127,7 +127,7 @@ export const Navbar = () => {
                     </div>
                   ))}
                   <Link
-                    href="/test.pdf"
+                    href="/johann_mendoza_resume"
                     download
                     target="_blank"
                     className=" px-6 py-4"

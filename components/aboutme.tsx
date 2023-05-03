@@ -22,7 +22,7 @@ export const AboutMe = () => {
         >
           <Image
             className="inset-0 mb-4 mr-4 aspect-[3/5] shrink-0 object-cover object-center"
-            src="/image2.jpg"
+            src="/aboutusImage.jpg"
             alt="Picture of Johann Isaiah Mendoza"
             width={240}
             height={400}

@@ -12,7 +12,6 @@ export type dataResponse = {
 };
 
 export default function Project({ data }: { data: dataResponse[] }) {
-  console.log(data);
   return (
     <>
       <Head>
