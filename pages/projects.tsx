@@ -12,6 +12,7 @@ export type dataResponse = {
 };
 
 export default function Project({ data }: { data: dataResponse[] }) {
+  console.log(data);
   return (
     <>
       <Head>
@@ -38,7 +39,7 @@ export default function Project({ data }: { data: dataResponse[] }) {
 
 export async function getStaticProps() {
   const response = await fetch(
-    "https://api.github.com/users/MrXInfinity/repos?sort=created_at"
+    "https://api.github.com/users/MrXInfinity/repos?q=size:>5&sort=created_at"
   );
   const data = await response.json();
 

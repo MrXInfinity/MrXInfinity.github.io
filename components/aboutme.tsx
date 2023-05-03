@@ -59,7 +59,7 @@ export const AboutMe = () => {
               Experience
             </h1>
             <p className="text-justify font-roboto text-sm opacity-80 sm:opacity-90 md:text-base">
-              My passion for coding started at senior high school, where I first
+              My passion for coding started at senior high school, when I first
               experienced HTML and CSS. While we were taught general programming
               languages such as C++ and C# in junior high school, it didn&apos;t
               spark interest, unlike web development. My deciding factor was
