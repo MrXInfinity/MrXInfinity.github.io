@@ -127,7 +127,7 @@ export const Navbar = () => {
                     </div>
                   ))}
                   <Link
-                    href="/johann_mendoza_resume"
+                    href="/johann_mendoza_resume.pdf"
                     download
                     target="_blank"
                     className=" px-6 py-4"
