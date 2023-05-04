@@ -24,12 +24,16 @@ export default function Project({ data }: { data: dataResponse[] }) {
             List of Projects
           </h1>
           <div className="flex flex-col gap-2">
-            {data.map(({ html_url, name, description, homepage }, index) => (
-              <EachProject
-                key={index}
-                {...{ name, description, homepage, html_url, index }}
-              />
-            ))}
+            {data.map(({ html_url, name, description, homepage }, index) => {
+              if (name !== "MrXInfinity") {
+                return (
+                  <EachProject
+                    key={index}
+                    {...{ name, description, homepage, html_url, index }}
+                  />
+                );
+              }
+            })}
           </div>
         </div>
       </div>
@@ -39,7 +43,7 @@ export default function Project({ data }: { data: dataResponse[] }) {
 
 export async function getStaticProps() {
   const response = await fetch(
-    "https://api.github.com/users/MrXInfinity/repos?q=size:>5&sort=created_at"
+    "https://api.github.com/users/MrXInfinity/repos?sort=created_at"
   );
   const data = await response.json();
 
