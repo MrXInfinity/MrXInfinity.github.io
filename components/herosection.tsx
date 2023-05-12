@@ -15,9 +15,9 @@ export const Herosection = () => {
           </h1>
           <p className="text-justify font-roboto text-sm opacity-80 md:text-base">
             I am very passionate about programming, building websites, and
-            learning new and different technologies and concepts. I am a Full
-            Stack Developer, responsible for both the UI and the backend for my
-            previous projects
+            learning innovative technologies. I am a Full Stack Developer,
+            responsible for both the UI, as well as the backend for my previous
+            projects
           </p>
         </div>
         <div className="flex gap-4 font-playfairDisplay text-blue-500">

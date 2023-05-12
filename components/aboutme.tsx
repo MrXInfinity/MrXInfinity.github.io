@@ -42,10 +42,11 @@ export const AboutMe = () => {
             <p className="text-justify font-roboto text-sm opacity-80 sm:opacity-90 md:text-base">
               Growing up, I always loved games and fashion. Games are a way to
               solve problems, explore and discover new things. Fashion is my way
-              of expressing myself. All those things have cultivated and
-              overlapped with my passion for web development. The games I played
-              made me strategic and detail-oriented. Fashion has also helped me
-              a bit better in designing my own personal projects.{" "}
+              of expressing myself. All those things have cultivated over the
+              years, thus it overlapped with my passion for web development. The
+              games I played made me strategic, as well as detail-oriented.
+              Fashion has also helped me a bit better in designing my own
+              personal projects.{" "}
             </p>
           </motion.div>
 
@@ -61,9 +62,8 @@ export const AboutMe = () => {
             <p className="text-justify font-roboto text-sm opacity-80 sm:opacity-90 md:text-base">
               My passion for coding started at senior high school, when I first
               experienced HTML and CSS. While we were taught general programming
-              languages such as C++ and C# in junior high school, it didn&apos;t
-              spark interest, unlike web development. My deciding factor was
-              that you could visualize creativity. Learning javascript then has
+              languages like c++ and c#, web development was the initial spark
+              that made me curious and passionate. Learning javascript then has
               shown me a new way of creativity. Creativity in logic while
               providing efficiency which has made me appreciate the ecosystem
               and its continuous innovation.

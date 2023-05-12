@@ -14,9 +14,9 @@ export default function Home() {
       <main className="flex flex-col items-center gap-10 px-8 pt-8 md:gap-20 md:pt-14 lg:px-24 xl:px-32">
         <div className="flex flex-col gap-44 sm:gap-72  ">
           <Herosection />
-          <AboutMe />
-          <Skillset />
           <Projects />
+          <Skillset />
+          <AboutMe />
         </div>
         <ContactReminder />
       </main>
