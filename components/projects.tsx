@@ -10,6 +10,7 @@ import {
   SiMui,
   SiNextdotjs,
   SiNodedotjs,
+  SiPrisma,
   SiReact,
   SiTailwindcss,
   SiTypescript,
@@ -49,15 +50,6 @@ export const Projects = () => {
       githubLink: "https://github.com/MrXInfinity/SharedNotes",
     },
     {
-      title: "Muntinlupa University",
-      usedToolIcons: [SiReact, SiVite, SiMui, SiTypescript],
-      description:
-        "Muntinlupa University is a simple project that I've done for my significant other. It is very simple in its logic and design as I've finished it shortly. I did improve and made it complex in another project called Muntinlupa University V2.",
-      image: "/muntinlupaUniversity_img.png",
-      projectLink: "https://muntinlupa-university.onrender.com/",
-      githubLink: "https://github.com/MrXInfinity/MuntinlupaUniversity",
-    },
-    {
       title: "this.portfolio",
       usedToolIcons: [
         SiNextdotjs,
@@ -71,6 +63,22 @@ export const Projects = () => {
       image: "/portfolio_img.png",
       projectLink: "https://jm-dev-portfolio.vercel.app",
       githubLink: "https://github.com/MrXInfinity/jm-dev-portfolio",
+    },
+    {
+      title: "Job Listings",
+      usedToolIcons: [
+        SiReact,
+        SiTypescript,
+        SiNextdotjs,
+        SiFramer,
+        SiTailwindcss,
+        SiPrisma,
+      ],
+      description:
+        "JobListings lets you list and organize all your job application all in one platform. It has a simple interface that has all your needs to keep tabs on all your job listings.",
+      image: "/jobListings_img.png",
+      projectLink: "https://job-listings-theta.vercel.app",
+      githubLink: "https://github.com/MrXInfinity/JobListings",
     },
   ];
 
