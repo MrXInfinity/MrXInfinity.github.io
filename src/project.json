@@ -1,0 +1,88 @@
+[
+  {
+    "title": "SalesMatch Page",
+    "tools": ["React", "Typescript", "TailwindCSS", "NextJS", "Framer Motion"],
+    "description": "A landing page filled with complicated UI and different animations.",
+    "isEmployed": true
+  },
+  {
+    "title": "CYS App Landing Page",
+    "tools": ["React", "Typescript", "TailwindCSS", "NextJS", "Framer Motion"],
+    "description": "The landing page for a mobile app. Translated Figma designs into code",
+    "isEmployed": true
+  },
+  {
+    "title": "Prostrive Website",
+    "tools": [
+      "VueJS",
+      "Firebase",
+      "HeadlessUI",
+      "NodeJS",
+      "Express",
+      "Prismic",
+      "Vite"
+    ],
+    "description": "The company website that I worked for. Filled with different animations and complex UI",
+    "liveLink": "https://prostrive.io",
+    "isEmployed": true
+  },
+  {
+    "title": "CYS Delivery App",
+    "tools": ["React", "Typescript", "Firebase", "NestJs", "Prisma", "Docker"],
+    "description": "A series of mobile app where different different products are ordered, processed and delivered to customers.",
+    "isEmployed": true
+  },
+  {
+    "title": "jm.dev",
+    "tools": ["React", "Typescript", "NextJS", "Framer Motion", "TailwindCSS"],
+    "description": "My own personal website that showcases my skills, projects and all things ME.",
+    "githubLink": "https://github.com/MrXInfinity/jm-dev-portfolio"
+  },
+  {
+    "title": "JobListings",
+    "tools": [
+      "React",
+      "Typescript",
+      "NextJS",
+      "Framer Motion",
+      "TailwindCSS",
+      "Prisma"
+    ],
+    "description": "JobListings lets you list and organize all your job application all in one platform. It has a simple interface that has all your needs to keep tabs on all your job listings",
+    "githubLink": "https://github.com/MrXInfinity/JobListings",
+    "liveLink": "https://job-listings-theta.vercel.app"
+  },
+  {
+    "title": "SharedNotes",
+    "tools": ["React", "Typescript", "Firebase", "Material UI", "Vite"],
+    "description": "SharedNotes is a website that stores notes, either private or shared, reminders and tasks. Its note editor has added functionalities found in modern text editors. It’s a full stack application utilizing Vite-React for client and Firebase as its backend.",
+    "githubLink": "https://github.com/MrXInfinity/SharedNotes",
+    "liveLink": "https://sharenotes-dev.web.app/sign-in"
+  },
+  {
+    "title": "Traveloga API",
+    "tools": ["MongoDB", "NodeJS", "Express"],
+    "description": "Traveloga-api is a REST API for list of available airports around the world with their price of tickets for every corresponding tourist destination in the Philippines. (NOTE: This is not entirely factual. List of airports are valid but reduced, while prices are just guesses).",
+    "githubLink": "https://github.com/MrXInfinity/traveloga-api"
+  },
+  {
+    "title": "Traveloga",
+    "tools": ["React", "TailwindCSS", "Axios", "HeadlessUI"],
+    "description": "Traveloga is a website that allows you to book some famous tourists spots within the Philippines. It’s a full stack application built with Create-React-App and has its own REST API, Authentication and Database storage for users and their bookings.",
+    "githubLink": "https://github.com/MrXInfinity/traveloga",
+    "liveLink": "https://traveloga.onrender.com"
+  },
+
+  {
+    "title": "node_express_practice",
+    "tools": ["NodeJS", "Express"],
+    "description": "A list of Node and Express projects that I followed through. Made by John Smilga from Coding Addict",
+    "githubLink": "https://github.com/MrXInfinity/node_express_practice"
+  },
+  {
+    "title": "Tahanan",
+    "tools": ["HTML", "CSS", "Javascript"],
+    "description": "Tahanan is a simple e-commerce website that sells furniture. It's made from HTML, CSS and Javascript. It is one of my earliest projects.",
+    "githubLink": "https://github.com/MrXInfinity/Tahanan"
+  }
+]
