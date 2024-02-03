@@ -145,7 +145,7 @@ export const Projects = () => {
             </h2>
             <div className="flex gap-2 ">
               {tools.map((EachTool, index) => (
-                <span
+                <EachTool
                   className="h-4 w-4 object-contain object-center"
                   color="#00000099"
                   key={index}
