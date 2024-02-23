@@ -64,7 +64,7 @@ export const Projects = () => {
       ],
       description:
         "JobListings lets you list and organize all your job application all in one platform. It has a simple interface that has all your needs to keep tabs on all your job listings.",
-      image: "jobListing",
+      image: "joblisting",
       projectLink: "https://job-listings-theta.vercel.app",
       githubLink: "https://github.com/MrXInfinity/JobListings",
     },
